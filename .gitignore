@@ -1,0 +1,4 @@
+.DS_Store
+.idea/
+/smtp-sink-service/src/SmtpSink/bin/
+/smtp-sink-service/src/SmtpSink/obj/

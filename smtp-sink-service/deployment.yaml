@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smtp-sink-service
+  namespace: kiva  # Namespace specified here
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smtp-sink-service
+  template:
+    metadata:
+      labels:
+        app: smtp-sink-service
+    spec:
+      containers:
+        - name: smtp-sink-service
+          image: smtp-sink-service
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: "Development"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: smtp-sink-service
+  namespace: kiva  # Namespace specified here
+spec:
+  selector:
+    app: smtp-sink-service
+  ports:
+    - port: 8080
+      targetPort: 8080
+  type: ClusterIP
