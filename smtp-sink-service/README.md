@@ -1,6 +1,6 @@
-# smtp-sink
+# smtp sink service
 
-Provides an smtp sink service for testing email generation without changes to the implementation
+A service that recieves smtp messages for testing email generation without changes to the implementation
 consuming SMTP services (other than configuring it).
 
 ## Code
@@ -19,14 +19,16 @@ consuming SMTP services (other than configuring it).
 3. run dotnet build in the src directory
 4. run `dotnet run --project SmtpSink/SmtpSink.csproj` in the src directory
 
-## Integrating with Tilt
+## Integrating with Kiva Dev environment (Tilt)
 
-1. After getting kiva environment running and this extension environment running. See the [project documentation](../README.md) for more information on that.
-2. Add sendmail to the kiva utility pod: `apt update && apt install -y sendmail`
-4. Test by running: ` swaks --to myemail@kiva.org --from test@localhost --server localhost:2525 --data "Subject: Test Email\n\nThis is a test email."`
+After getting kiva environment running and this extension environment running. See the [project documentation](../README.md) for more information on that.
+1. Add sendmail to the kiva utility pod: `apt update && apt install -y sendmail`
+2. Test by running: ` swaks --to myemail@kiva.org --from test@localhost --server localhost:2525 --data "Subject: Test Email\n\nThis is a test email."`
+3. Run any process in the utility pod that sends an email
 
 
-
+## TODO
+Need to confirm Tilt/Docker ports are configured correctly. 
 
 
 
