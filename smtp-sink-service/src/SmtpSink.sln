@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmtpSink", "SmtpSink\SmtpSink.csproj", "{203CE03C-6880-451C-BC85-7A665C14762C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "AppHost\AppHost.csproj", "{FDC865E5-1E47-481B-B2F8-A214E5415D16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "ServiceDefaults\ServiceDefaults.csproj", "{4E075684-4675-4E23-AA91-E936FA289C01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{203CE03C-6880-451C-BC85-7A665C14762C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{203CE03C-6880-451C-BC85-7A665C14762C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{203CE03C-6880-451C-BC85-7A665C14762C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDC865E5-1E47-481B-B2F8-A214E5415D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC865E5-1E47-481B-B2F8-A214E5415D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC865E5-1E47-481B-B2F8-A214E5415D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC865E5-1E47-481B-B2F8-A214E5415D16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E075684-4675-4E23-AA91-E936FA289C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E075684-4675-4E23-AA91-E936FA289C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E075684-4675-4E23-AA91-E936FA289C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E075684-4675-4E23-AA91-E936FA289C01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
